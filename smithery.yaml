@@ -1,0 +1,10 @@
+name: image-metadata-ai-mcp
+description: "MEOK AI Labs — Image information and metadata tools powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/image-metadata-ai-mcp
+license: MIT
+categories: [Photography, Media]
+tags: [image-metadata, exif, photo-metadata, image-analysis, iptc]
+runtime: python
+entrypoint: server.py
