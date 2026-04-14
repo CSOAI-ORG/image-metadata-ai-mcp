@@ -117,7 +117,7 @@ def get_dimensions(file_path: str) -> dict:
                         i += 1
                 return {"error": "Could not find JPEG dimensions"}
             # GIF
-            if header[:4] in (b'GIF8',):
+            if header[:4] in (b'GIF8'):
                 w, h = struct.unpack('<HH', header[6:10])
                 return {"width": w, "height": h, "format": "gif", "aspect_ratio": round(w/h, 3) if h else 0}
             # BMP
