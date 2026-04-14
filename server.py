@@ -3,6 +3,11 @@ Image Metadata AI MCP Server
 Image information and metadata tools powered by MEOK AI Labs.
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import io
 import struct
 import base64
@@ -47,13 +52,17 @@ SIGNATURES = {
 
 
 @mcp.tool()
-def detect_format(file_path: str = "", base64_data: str = "") -> dict:
+def detect_format(file_path: str = "", base64_data: str = "", api_key: str = "") -> dict:
     """Detect image format from file path or base64 data.
 
     Args:
         file_path: Path to image file
         base64_data: Base64-encoded image data (first 100 chars sufficient)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("detect_format")
     header = b""
     if file_path:
@@ -82,12 +91,16 @@ def detect_format(file_path: str = "", base64_data: str = "") -> dict:
 
 
 @mcp.tool()
-def get_dimensions(file_path: str) -> dict:
+def get_dimensions(file_path: str, api_key: str = "") -> dict:
     """Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
 
     Args:
         file_path: Path to image file
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("get_dimensions")
     path_err = _validate_file_path(file_path)
     if path_err:
@@ -130,12 +143,16 @@ def get_dimensions(file_path: str) -> dict:
 
 
 @mcp.tool()
-def read_exif(file_path: str) -> dict:
+def read_exif(file_path: str, api_key: str = "") -> dict:
     """Read EXIF metadata from a JPEG image file.
 
     Args:
         file_path: Path to JPEG image file
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("read_exif")
     path_err = _validate_file_path(file_path)
     if path_err:
@@ -169,13 +186,17 @@ def read_exif(file_path: str) -> dict:
 
 
 @mcp.tool()
-def strip_metadata(file_path: str, output_path: str = "") -> dict:
+def strip_metadata(file_path: str, output_path: str = "", api_key: str = "") -> dict:
     """Strip all metadata from an image file for privacy.
 
     Args:
         file_path: Path to source image
         output_path: Output path (default: adds '_clean' suffix)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("strip_metadata")
     path_err = _validate_file_path(file_path)
     if path_err:

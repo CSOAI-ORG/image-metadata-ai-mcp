@@ -1,10 +1,35 @@
 name: image-metadata-ai-mcp
-description: "MEOK AI Labs — Image information and metadata tools powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/image-metadata-ai-mcp
-license: MIT
-categories: [Photography, Media]
-tags: [image-metadata, exif, photo-metadata, image-analysis, iptc]
-runtime: python
-entrypoint: server.py
+description: Image format detection, EXIF reading, metadata stripping, and dimension
+  extraction.
+version: 1.0.0
+tools:
+- name: detect_format
+  description: Detect image format from file path or base64 data.
+  parameters:
+  - name: file_path
+    type: string
+    required: false
+  - name: base64_data
+    type: string
+    required: false
+- name: get_dimensions
+  description: Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
+  parameters:
+  - name: file_path
+    type: string
+    required: true
+- name: read_exif
+  description: Read EXIF metadata from a JPEG image file.
+  parameters:
+  - name: file_path
+    type: string
+    required: true
+- name: strip_metadata
+  description: Strip all metadata from an image file for privacy.
+  parameters:
+  - name: file_path
+    type: string
+    required: true
+  - name: output_path
+    type: string
+    required: false
