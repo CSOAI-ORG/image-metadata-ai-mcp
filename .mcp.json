@@ -1,6 +1,6 @@
 {
   "name": "image-metadata-ai-mcp",
-  "description": "Image format detection, EXIF reading, metadata stripping, and dimension extraction.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
