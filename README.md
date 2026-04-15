@@ -1,24 +1,55 @@
-# Image Metadata AI MCP Server
+# Image Metadata AI
 
-Image format detection, EXIF reading, metadata stripping, and dimension extraction.
+> By [MEOK AI Labs](https://meok.ai) — Image information and metadata tools
+
+## Installation
+
+```bash
+pip install image-metadata-ai-mcp
+```
+
+## Usage
+
+```bash
+# Run standalone
+python server.py
+
+# Or via MCP
+mcp install image-metadata-ai-mcp
+```
 
 ## Tools
 
-- **read_exif**
-- **strip_metadata**
-- **get_dimensions**
-- **detect_format**
+### `detect_format`
+Detect image format from file path or base64 data. Supports PNG, JPEG, GIF, WebP, BMP, ICO, and TIFF.
 
-## Quick Start
+**Parameters:**
+- `file_path` (str): Path to image file
+- `base64_data` (str): Base64-encoded image data (first 100 chars sufficient)
 
-```bash
-pip install mcp
-python server.py
-```
+### `get_dimensions`
+Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
 
-## Rate Limits
+**Parameters:**
+- `file_path` (str): Path to image file
 
-- Free tier: 50 calls/day per tool
-- Upgrade: https://meok.ai/pricing
+### `read_exif`
+Read EXIF metadata from a JPEG image file.
 
-Built by [MEOK AI Labs](https://meok.ai)
+**Parameters:**
+- `file_path` (str): Path to JPEG image file
+
+### `strip_metadata`
+Strip all metadata from an image file for privacy.
+
+**Parameters:**
+- `file_path` (str): Path to source image
+- `output_path` (str): Output path (default: adds '_clean' suffix)
+
+## Authentication
+
+Free tier: 50 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+
+## License
+
+MIT — MEOK AI Labs
