@@ -1,7 +1,7 @@
 {
   "name": "image-metadata-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs \u2014 image metadata MCP Server",
+  "description": "AI-powered image metadata ai MCP server for agents. Supports detect format, get dimensions, read exif. By MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "image metadata",
