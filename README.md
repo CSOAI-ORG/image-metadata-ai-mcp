@@ -1,55 +1,38 @@
-# Image Metadata AI
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Image information and metadata tools
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/image-metadata-ai-mcp)](https://github.com/CSOAI-ORG/image-metadata-ai-mcp/stargazers)
+
+# uimageU metadataU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/image-metadata-ai-mcp)](https://www.npmjs.com/package/@meok-ai/image-metadata-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/image-metadata-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install image-metadata-ai-mcp
+# or
+npm install -g @meok-ai/image-metadata-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install image-metadata-ai-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `detect_format`
-Detect image format from file path or base64 data. Supports PNG, JPEG, GIF, WebP, BMP, ICO, and TIFF.
-
-**Parameters:**
-- `file_path` (str): Path to image file
-- `base64_data` (str): Base64-encoded image data (first 100 chars sufficient)
-
-### `get_dimensions`
-Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
-
-**Parameters:**
-- `file_path` (str): Path to image file
-
-### `read_exif`
-Read EXIF metadata from a JPEG image file.
-
-**Parameters:**
-- `file_path` (str): Path to JPEG image file
-
-### `strip_metadata`
-Strip all metadata from an image file for privacy.
-
-**Parameters:**
-- `file_path` (str): Path to source image
-- `output_path` (str): Output path (default: adds '_clean' suffix)
-
-## Authentication
-
-Free tier: 50 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
