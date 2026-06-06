@@ -1,0 +1,31 @@
+# Image Metadata Ai MCP
+
+> MEOK AI Labs MCP Server
+
+`image-metadata-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install image-metadata-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx image-metadata-ai-mcp
+```
+
+## Tools
+
+- `detect_format` — Detect image format from file path or base64 data.
+- `get_dimensions` — Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
+- `read_exif` — Read EXIF metadata from a JPEG image file.
+- `strip_metadata` — Strip all metadata from an image file for privacy.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/image-metadata-ai-mcp
+- PyPI: https://pypi.org/project/image-metadata-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
