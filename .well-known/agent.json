@@ -1,0 +1,59 @@
+{
+  "name": "image-metadata-ai-mcp",
+  "description": "Image Metadata Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/image-metadata-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "detect_format",
+      "name": "Detect Format",
+      "description": "detect_format via image-metadata-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_dimensions",
+      "name": "Get Dimensions",
+      "description": "get_dimensions via image-metadata-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "read_exif",
+      "name": "Read Exif",
+      "description": "read_exif via image-metadata-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "strip_metadata",
+      "name": "Strip Metadata",
+      "description": "strip_metadata via image-metadata-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

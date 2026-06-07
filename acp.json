@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "image-metadata-ai-mcp",
+    "description": "Image Metadata Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "image-metadata-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "detect_format",
+      "get_dimensions",
+      "read_exif",
+      "strip_metadata"
+    ]
+  }
+}
