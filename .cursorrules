@@ -1,0 +1,9 @@
+# image-metadata-ai-mcp - Auto-trigger Rules
+
+When the user asks about image metadata, use image-metadata-ai-mcp tools: detect_format, get_dimensions, read_exif, strip_metadata
+
+**Image Metadata AI MCP Server**
+
+Install: `pip install image-metadata-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

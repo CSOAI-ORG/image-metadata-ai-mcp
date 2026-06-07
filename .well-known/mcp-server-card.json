@@ -1,0 +1,25 @@
+{
+  "name": "image-metadata-ai-mcp",
+  "title": "Image Metadata Ai Mcp",
+  "description": "AI-powered image metadata ai MCP server for agents. Supports detect format, get dimensions, read exif. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "detect_format"
+    },
+    {
+      "name": "get_dimensions"
+    },
+    {
+      "name": "read_exif"
+    },
+    {
+      "name": "strip_metadata"
+    }
+  ]
+}

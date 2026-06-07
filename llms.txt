@@ -1,31 +1,33 @@
-# Image Metadata Ai MCP
-
-> MEOK AI Labs MCP Server
-
-`image-metadata-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# image-metadata-ai-mcp
+# **Image Metadata AI MCP Server**
 
 ## Install
-
 ```bash
 pip install image-metadata-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx image-metadata-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `detect_format` — Detect image format from file path or base64 data.
-- `get_dimensions` — Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
-- `read_exif` — Read EXIF metadata from a JPEG image file.
-- `strip_metadata` — Strip all metadata from an image file for privacy.
+### `detect_format`
+Detect image format from file path or base64 data.
 
-## Links
+### `get_dimensions`
+Get width and height of an image file (supports PNG, JPEG, GIF, BMP).
 
-- Source: https://github.com/CSOAI-ORG/image-metadata-ai-mcp
-- PyPI: https://pypi.org/project/image-metadata-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `read_exif`
+Read EXIF metadata from a JPEG image file.
+
+### `strip_metadata`
+Strip all metadata from an image file for privacy.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

@@ -1,6 +1,4 @@
 """
-Buy Pro: https://www.csoai.org/checkout
-
 Image Metadata AI MCP Server
 Image information and metadata tools powered by MEOK AI Labs.
 """
