@@ -9,7 +9,7 @@ description = "AI-powered image metadata ai MCP server for agents. Supports dete
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
-dependencies = ["mcp>=1.0.0", "pillow>=9.0.0", ]
+dependencies = ["mcp>=1.27.2", "pillow>=9.0.0", ]
 keywords = ["mcp", "ai", "meok", "image", "metadata"]
 classifiers = [
     "Programming Language :: Python :: 3",
