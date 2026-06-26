@@ -1,4 +1,4 @@
-<!-- mcp-name: CSOAI-ORG/image-metadata-ai-mcp -->
+<!-- mcp-name: io.github.CSOAI-ORG/image-metadata-ai-mcp -->
 [![MCP Scorecard: 74/100](https://img.shields.io/badge/proofof.ai-74%2F100-5b21b6)](https://proofof.ai/scorecard/image-metadata-ai-mcp.html)
 
 # Image Metadata Ai MCP
